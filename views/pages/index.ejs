@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="navbar_test">
+
+<head lang="en">
+  <meta charset="utf-8">
+  <link href="https://bootswatch.com/superhero/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body ng-controller="MainCtrl">
+  <header class="well">
+    <div class="navbar" bs-navbar>
+      <div class="navbar-inner">
+        <ul class="nav">
+          <!--################################################################-->
+          <!--######################Dynamic navber############################-->
+          <li data-match-route="/{{nav_item.href}}" ng-repeat="nav_item in nav_items">
+            <a href="#/{{nav_item.href}}">{{nav_item.text}}</a>
+          </li>
+          <!--################################################################-->
+          <!--######################Static navbar#############################-->
+          <!--            <li data-match-route="/home">
+              <a href="#/home">Home</a>
+            </li>
+            <li data-match-route="/custom_page">
+              <a href="#/custom_page">Custom Page</a>
+            </li>
+            <li data-match-route="/about">
+              <a href="#/about">About</a>
+            </li>-->
+          <!--################################################################-->
+          <!--################################################################-->
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="container well">
+    <ng-view></ng-view>
+  </section>
+  <footer class="well"></footer>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.3/underscore-min.js"></script>
+  <script src="http://yahyakacem.github.io/Navbar_directives/public/libs/angular-strap/dist/angular-strap.min.js"></script>
+  <script src="controllers.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
