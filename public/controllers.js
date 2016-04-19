@@ -24,6 +24,18 @@ controllers.OverviewCtrl = function($scope){
 controllers.GroupCtrl = function($scope){
   $scope.title   = "group page";
   $scope.content = "group page content";
+  
+      $scope.master = {};
+
+      $scope.update = function(ageGrp) {
+        $scope.master = angular.copy(ageGrp);
+      };
+
+      $scope.reset = function() {
+        $scope.ageGrp = angular.copy($scope.master);
+      };
+
+      $scope.reset();
 };
 //###################END HomeCtrl#####################
 //####################################################

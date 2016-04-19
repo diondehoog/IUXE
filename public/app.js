@@ -27,7 +27,7 @@ var app = angular.module('navbar_test', ['$strap.directives'])
                     $routeProvider
                                     .when('/main',         {templateUrl: 'template.tpl', controller: 'MainCtrl'})
                                     .when('/overview',         {templateUrl: 'template.tpl', controller: 'OverviewCtrl'})
-                                    .when('/group',   {templateUrl: 'template.tpl', controller: 'GroupCtrl'})
+                                    .when('/group',   {templateUrl: 'template2.tpl', controller: 'GroupCtrl'})
                                     .when('/playlist',          {templateUrl: 'template.tpl', controller: 'PlaylistCtrl'})
                                     .when('/profile',          {templateUrl: 'template.tpl', controller: 'QuestionCtrl'})
                                     .when('/start',          {templateUrl: 'template.tpl', controller: 'StartCtrl'})
