@@ -40,9 +40,15 @@ controllers.GroupCtrl = function($scope){
 //###################END HomeCtrl#####################
 //####################################################
 //###################START CustomCtrl#################
-controllers.PlaylistCtrl = function($scope){
+controllers.PlaylistCtrl = function($scope, Spotify){
   $scope.title   = "playlist page";
   $scope.content = "playlist page content";
+    $scope.login = function () {
+        Spotify.login();
+    };
+
+    $scope.artist = Spotify.getArtist('spotify:track:5XxVNCUCqE3F0jdD5x19mv');
+
 };
 //###################END CustomCtrl###################
 //####################################################
