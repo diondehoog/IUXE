@@ -35,7 +35,7 @@ var app = angular.module('orchestrapp', ['$strap.directives', 'spotify'])
             .when('/start', {templateUrl: 'template.tpl', controller: 'StartCtrl'})
             .otherwise({redirectTo: "/main"});
         SpotifyProvider.setClientId('edb5ae47ae7747ee9af856a8a66769a7');
-        SpotifyProvider.setRedirectUri('http://localhost:5000/#/callback.html');
+        SpotifyProvider.setRedirectUri('http://orchestrapp.herokuapp.com/callback.html');
         SpotifyProvider.setScope('user-read-private playlist-read-private playlist-modify-private playlist-modify-public');
     });
 //####################################################
