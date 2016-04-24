@@ -1,5 +1,5 @@
 <h1>{{title}}</h1>
 
-<div>
-  {{artist}}
-</div>
+<ul ng-repeat="playlist in playlists">
+  <li>{{playlist}}</li>
+</ul>

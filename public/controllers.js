@@ -64,6 +64,15 @@ controllers.PlaylistCtrl = function($scope, Spotify){
       });
     };
 
+    angular.element(document).ready(function () {
+      var storedToken = window.localStorage.getItem('spotify-token');
+      if (storedToken !== null) {
+        Spotify.setAuthToken(storedToken);
+        $scope.updateInfo();
+      } else {
+        $scope.login();
+      }
+    });
 
 
 
