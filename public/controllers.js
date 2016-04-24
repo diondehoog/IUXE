@@ -48,8 +48,6 @@ controllers.PlaylistCtrl = function($scope, Spotify){
         $scope.updateInfo
     };
 
-    $scope.artist = Spotify.getArtist('spotify:artist:6jOz2B9qeID4dLP1o8bFGf');
-
     $scope.updateInfo = function() {
       Spotify.getCurrentUser().then(function (data) {
         $scope.getUserPlaylists(data.id);
