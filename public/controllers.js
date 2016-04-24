@@ -45,9 +45,27 @@ controllers.PlaylistCtrl = function($scope, Spotify){
   $scope.content = "playlist page content";
     $scope.login = function () {
         Spotify.login();
+        $scope.updateInfo
     };
 
-    $scope.artist = Spotify.getArtist('spotify:track:5XxVNCUCqE3F0jdD5x19mv');
+    $scope.artist = Spotify.getArtist('spotify:artist:6jOz2B9qeID4dLP1o8bFGf');
+
+    $scope.updateInfo = function() {
+      Spotify.getCurrentUser().then(function (data) {
+        $scope.getUserPlaylists(data.id);
+      }, function(error) {
+        $scope.login();
+      });
+    };
+
+    $scope.getUserPlaylists = function(userid) {
+      Spotify.getUserPlaylists(userid).then(function (data) {
+        $scope.playlists = data.items;
+      });
+    };
+
+
+
 
 };
 //###################END CustomCtrl###################
