@@ -25,7 +25,7 @@ angular.module('$strap.directives')
 
 //####################################################
 var app = angular.module('orchestrapp', ['$strap.directives', 'spotify'])
-    .config(function ($routeProvider, SpotifyProvider, $httpProvider) {
+    .config(function ($routeProvider, SpotifyProvider) {
         $routeProvider
             .when('/main', {templateUrl: 'template.tpl', controller: 'MainCtrl'})
             .when('/overview', {templateUrl: 'template.tpl', controller: 'OverviewCtrl'})
@@ -34,7 +34,6 @@ var app = angular.module('orchestrapp', ['$strap.directives', 'spotify'])
             .when('/profile', {templateUrl: 'template.tpl', controller: 'QuestionCtrl'})
             .when('/start', {templateUrl: 'template.tpl', controller: 'StartCtrl'})
             .otherwise({redirectTo: "/main"});
-        $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
         SpotifyProvider.setClientId('edb5ae47ae7747ee9af856a8a66769a7');
         SpotifyProvider.setRedirectUri('http://orchestrapp.herokuapp.com/callback.html');
         SpotifyProvider.setScope('user-read-private playlist-read-private playlist-modify-private playlist-modify-public');
