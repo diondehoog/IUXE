@@ -6,4 +6,4 @@
   <li>{{playlist.name}}</li>
 </ul>
 
-<iframe src="https://embed.spotify.com/?uri=spotify:track:2SkTXkFpM6AnunYEArAmNQ&view=coverart" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+
