@@ -1,0 +1,49 @@
+.question{
+  color:white;
+  background-color:gray;
+  margin:auto;
+  text-align:center;
+  width:70%;
+  font-size:40px;
+}
+
+.answerPanel{
+  width:70%;
+  margin:auto;
+}
+
+.answer{
+  color:white;
+  background-color:gray;
+  width:48%;
+  text-align:center;
+  margin-top:20px;
+  padding:10px;
+}
+
+.answer:hover{
+  color:gray;
+  background-color:white;
+}
+
+.floatLeft{
+  float:left;
+}
+
+.floatRight{
+  float:right;
+}
+
+.hintSkipButton{
+  color:white;
+  background-color:gray;
+  width:10%;
+  text-align:center;
+  padding:10px;
+  margin:auto;
+}
+
+.hintSkipButton:hover{
+  color:gray;
+  background-color:white;
+}
