@@ -90,5 +90,9 @@ controllers.QuestionCtrl = function($scope){
 
 controllers.StartCtrl = function($scope){
   $scope.title   = "start page";
-  $scope.content = "start page content";
+  $scope.content = "This is a pointless question with pointless answers?";
+  $scope.answer1 = "Stroopwafel";
+  $scope.answer2 = "Potato";
+  $scope.answer3 = "Turtle";
+  $scope.answer4 = "Train";
 };
