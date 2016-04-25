@@ -52,7 +52,7 @@
       /**
        * API Base URL
        */
-      settings.apiBase = 'https://api.spotify.com/v1';
+      settings.apiBase = 'https://cors-anywhere.herokuapp.com/https://api.spotify.com/v1';
 
       this.$get = ['$q', '$http', '$window', function ($q, $http, $window) {
 
