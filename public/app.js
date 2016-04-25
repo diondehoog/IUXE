@@ -32,7 +32,7 @@ var app = angular.module('orchestrapp', ['$strap.directives', 'spotify'])
             .when('/group', {templateUrl: 'template2.tpl', controller: 'GroupCtrl'})
             .when('/playlist', {templateUrl: 'playlist.tpl', controller: 'PlaylistCtrl'})
             .when('/profile', {templateUrl: 'template.tpl', controller: 'QuestionCtrl'})
-            .when('/start', {templateUrl: 'template.tpl', controller: 'StartCtrl'})
+            .when('/start', {templateUrl: 'start.tpl', controller: 'StartCtrl'})
             .otherwise({redirectTo: "/main"});
         $httpProvider.defaults.useXDomain = true;
         SpotifyProvider.setClientId('edb5ae47ae7747ee9af856a8a66769a7');
