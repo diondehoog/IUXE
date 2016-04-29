@@ -72,6 +72,10 @@ controllers.PlaylistCtrl = function($scope, Spotify){
       }
     });
 
+    $scope.select = function(playlist) {
+        $scope.selected = playlist;
+    };
+
     $scope.getNewReleases = function() {
         Spotify.getNewReleases({ country: "NL" }).then(function (data) {
         console.log(data);
