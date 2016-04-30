@@ -9,5 +9,15 @@
   </ul>
 </div>​
 
+<div>
+  <p> Tracks of {{listname}} </p>
+      <ul>
+        <li ng-repeat="item in tracks" class="list card">
+          <h2>Title: {{item.track.name}}</h2>
+          <p> Artist: {{item.track.artists[0].name}}</p>
+        </li>
+      </ul>
+</div>
+
 
 
