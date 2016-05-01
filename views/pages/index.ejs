@@ -8,8 +8,8 @@
 </head>
 
 <body ng-controller="MainCtrl">
-  <header class="well">
-    <div class="navbar" bs-navbar>
+  <div class="row">
+    <div class="navbar col">
       <div class="navbar-inner">
         <ul class="nav">
           <!--################################################################-->
@@ -33,10 +33,10 @@
         </ul>
       </div>
     </div>
-  </header>
-  <section class="container well">
-    <ng-view></ng-view>
-  </section>
+    <div class="container col">
+      <ng-view></ng-view>
+    </div>
+  </div>
   <!--<footer class="well">
     <iframe src="https://embed.spotify.com/?uri=spotify:track:2SkTXkFpM6AnunYEArAmNQ&view=coverart" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
   </footer> -->
