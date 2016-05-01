@@ -1,6 +1,6 @@
   <div ng-controller="GroupCtrl">
   <form novalidate class="simple-form">
-    Age Group: 
+    <p class="agegroupText">Choose the age group:</p>: 
     <input type="radio" ng-model="user.ageGrp" value="young" />Young
     <input type="radio" ng-model="user.ageGrp" value="old" />Old<br />
     
