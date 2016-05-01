@@ -139,14 +139,12 @@
 .toggle input[type="radio"] + label {
   background:gray;
   color:white;
-  appearance: none;
 }
 
 .toggle label {
+  text-align:center;
   width:20%;
   font-size:20px;
   padding:10px;
   border:1px solid #CCC; 
-  cursor:pointer;
-  z-index:90;
 }
