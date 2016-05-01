@@ -79,11 +79,16 @@
 }
 
 .playlistButton{
-  color:gray;
-  background-color:white;
-}
-
-.playlistButton:hoever{
   color:white;
   background-color:gray;
+  border:none;
+  padding:5px;
+  text-decoration:none;
+  font-size:16px;
+  transition-duration: 0.4s;
+}
+
+.playlistButton:hover{
+  color:gray;
+  background-color:white;
 }
