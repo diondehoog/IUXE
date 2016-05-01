@@ -94,3 +94,8 @@
   color:gray;
   background-color:white;
 }
+
+playlistList{
+  list-style-type:none;
+}
+}
