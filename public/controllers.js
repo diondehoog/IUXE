@@ -41,10 +41,12 @@ controllers.GroupCtrl = function ($scope) {
 //####################################################
 //###################START CustomCtrl#################
 controllers.PlaylistCtrl = function ($scope, Spotify) {
-    var listid = 0;
     var userid = 0;
+    $scope.songIndex = 0;
+
     $scope.title = "playlist page";
     $scope.tracks = [];
+
     $scope.login = function () {
         Spotify.login();
         $scope.updateInfo
@@ -75,15 +77,15 @@ controllers.PlaylistCtrl = function ($scope, Spotify) {
         }
     });
 
-    $scope.select = function (playlist) {
-        $scope.selected = playlist;
-        listid = playlist.id;
-        $scope.getPlaylist(userid, playlist.id);
+    $scope.selectPlaylist = function (playlist) {
+        $scope.selectedPlaylist = playlist;
+        $scope.getPlaylist(playlist.owner.id, playlist.id);
     };
 
     $scope.getPlaylist = function(userid, listid) {
         return Spotify.getPlaylist(userid, listid).then(function (data) {
             $scope.tracks = data.tracks.items;
+            $scope.currentTrack = $scope.tracks[0].track
         });
     }
 
@@ -93,6 +95,18 @@ controllers.PlaylistCtrl = function ($scope, Spotify) {
         });
     };
 
+    $scope.displayPlayer = function (trackuri) {
+        $scope.iframe_url = 'https://embed.spotify.com/?uri=' + trackuri
+    }
+
+    $scope.nextSongFromList = function () {
+        $scope.songIndex++;
+        if( $scope.songIndex >= $scope.songIndex.length ){
+            $scope.songIndex = 0;
+        }
+        $scope.currentTrack = $scope.tracks[$scope.songIndex].track
+        $scope.displayPlayer($scope.currentTrack.uri)
+    }
 
 };
 //###################END CustomCtrl###################
