@@ -130,6 +130,10 @@
  padding-right:10px;
 }
 
+.toggle input[type="radio"] {
+  display:none;
+}
+
 .toggle input[type="radio"]:checked + label {
   font-size:20px;
   background:white;
@@ -146,5 +150,6 @@
   width:20%;
   font-size:20px;
   padding:10px;
-  border:1px solid #CCC; 
+  border:1px solid #CCC;
+  cursor:pointer;
 }
