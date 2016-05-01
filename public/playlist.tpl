@@ -1,4 +1,4 @@
-<h1>{{title}}</h1>
+<!--<h1>{{title}}</h1>-->
 
 <div>
 <p class="playlistText">selected: {{selected.name}}</p>
