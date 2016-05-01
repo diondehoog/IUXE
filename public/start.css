@@ -131,24 +131,21 @@
 }
 
 .toggle input[type="radio"]:checked + label {
-    font-size:20px;
-    background:white;
-    color:gray;
+  font-size:20px;
+  background:white;
+  color:gray;
 }
 
 .toggle input[type="radio"] + label {
-    background:gray;
-    color:white;
-    appearance: none;
+  background:gray;
+  color:white;
+  appearance: none;
 }
 
 .toggle label {
-     padding:5px;
-     border:1px solid #CCC; 
-     cursor:pointer;
-      z-index:90;
-}
-
-.toggle label:hover {
-     background:#DDD;
+  font-size:20pz;
+  padding:10px;
+  border:1px solid #CCC; 
+  cursor:pointer;
+  z-index:90;
 }
