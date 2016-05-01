@@ -138,6 +138,7 @@
 .toggle input[type="radio"] + label {
     background:gray;
     color:white;
+    appearance: none;
 }
 
 .toggle label {
