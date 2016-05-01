@@ -78,4 +78,12 @@
   width:15%;
 }
 
+.playlistButton{
+  color:gray;
+  background-color:white;
+}
 
+.playlistButton:hoever{
+  color:white;
+  background-color:gray;
+}
