@@ -1,15 +1,15 @@
 .question{
   color:white;
   background-color:gray;
-  margin:auto;
   text-align:center;
-  width:70%;
   font-size:40px;
+  min-height:width;
 }
 
-.answerPanel{
-  width:70%;
-  margin:auto;
+.question:before{
+  display: block;
+  padding-top: 100%;
+  float: left;
 }
 
 .answer{
@@ -37,13 +37,43 @@
 .hintSkipButton{
   color:white;
   background-color:gray;
-  width:10%;
   text-align:center;
-  padding:10px;
-  margin:auto;
+  vertical-align: middle;
 }
 
 .hintSkipButton:hover{
   color:gray;
   background-color:white;
 }
+
+.row {
+  display: table;
+  border:none;
+}
+
+.colButton{
+  display:table-cell;
+  padding: 1em;
+  border: none;
+  width:10%;
+}
+
+.col {
+  display:table-cell;
+  padding: 1em;
+  border: none;
+}
+
+.nav > li > a{
+ background-color:gray; 
+ color:white;
+}
+
+.nav > li > a:hover{
+ background-color:white; 
+ color:gray;
+}
+
+
+
+
