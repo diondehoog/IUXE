@@ -131,14 +131,20 @@
 }
 
 .toggle input[type="radio"]:checked + label {
-    background:yellow;
+    background:white;
+    color:gray;
+}
+
+.toggle input[type="radio"] + label {
+    background:gray;
+    color:white;
 }
 
 .toggle label {
      padding:5px;
      border:1px solid #CCC; 
      cursor:pointer;
-    z-index:90;
+      z-index:90;
 }
 
 .toggle label:hover {
