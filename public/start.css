@@ -21,7 +21,7 @@
   padding:10px;
 }
 
-.answer:hover{
+.answer:hover .answer:active{
   color:gray;
   background-color:white;
 }
@@ -41,7 +41,7 @@
   vertical-align: middle;
 }
 
-.hintSkipButton:hover{
+.hintSkipButton:hover .hintSkipButton:active{
   color:gray;
   background-color:white;
 }
@@ -74,6 +74,11 @@
  color:gray;
 }
 
+.nav > li > a:active{
+ background-color:white; 
+ color:gray;
+}
+
 .navbar{
   width:15%;
 }
@@ -90,7 +95,7 @@
   width:20%;
 }
 
-.playlistButton:hover{
+.playlistButton:hover .playlistButton:active{
   color:gray;
   background-color:white;
 }
