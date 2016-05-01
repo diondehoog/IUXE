@@ -21,7 +21,12 @@
   padding:10px;
 }
 
-.answer:hover .answer:active{
+.answer:hover{
+  color:gray;
+  background-color:white;
+}
+
+.answer:active{
   color:gray;
   background-color:white;
 }
@@ -41,7 +46,12 @@
   vertical-align: middle;
 }
 
-.hintSkipButton:hover .hintSkipButton:active{
+.hintSkipButton:hover{
+  color:gray;
+  background-color:white;
+}
+
+.hintSkipButton:active{
   color:gray;
   background-color:white;
 }
@@ -95,10 +105,16 @@
   width:20%;
 }
 
-.playlistButton:hover .playlistButton:active{
+.playlistButton:hover{
   color:gray;
   background-color:white;
 }
+
+.playlistButton:active{
+  color:gray;
+  background-color:white;
+}
+
 
 .playlistList{
   list-style-type:none;
