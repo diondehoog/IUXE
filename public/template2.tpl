@@ -3,11 +3,15 @@
     <p class="agegroupText">Choose the age group:</p>
     
     <div class="toggle">
-      <label><input type="radio" ng-model="user.ageGrp" name="toggle" value="young"><span>On</span></label>    
+      <input type="radio" id = "younggrp" ng-model="user.ageGrp" name="toggle" value="young" />
+      <label for="younggrp">Young</label>
     </div>
+    
     <div class="toggle">
-      <label><input type="radio" ng-model="user.ageGrp" name="toggle" value="old"><span>Off</span></label>
+      <input type="radio" id = "oldgrp" ng-model="user.ageGrp" name="toggle" value="old" />
+      <label for="oldgrp">Old</label>
     </div>
+    
     <!--
     <input type="button" ng-click="reset()" value="Reset" />
     <input type="submit" ng-click="update(user)" value="Save" />
